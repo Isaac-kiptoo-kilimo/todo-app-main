@@ -222,6 +222,60 @@
   }
 
   
+  @media(max-width:600px){
+    .clear, .count{
+      display: none;
+    }
+    .top-header{
+      background: url("images/bg-mobile-dark.jpg") no-repeat;
+      background-size: cover;
+      height: 35vh;
+    }
+    .wrapper{
+      width: 90%;
+    }
+    .main-header h1{
+      font-size: 1.5rem;
+    }
+    .filters{
+      margin: auto;
+    }
+    .footer{
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .left{
+    color: var(--pry-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--pry-bg-sec);
+    height: 50px;
+    font-size: 1rem;
+    color: hsl(234, 11%, 52%);
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    }
+    .left-clear{
+      cursor: pointer;
+    }
+    .left-clear:hover{
+      color:hsl(236, 33%, 92%);
+    }
+    body.light .left{
+      background-color: hsl(0, 0%, 98%);
+      color: var(--pry-color-light);
+    }
+    body.light .top-header{
+      background: url("images/bg-mobile-light.jpg") no-repeat;
+      background-size: cover;
+    }
+    body.light .left-clear:hover{
+      color:hsl(235, 19%, 35%);
+    }
+  }
+  
+  
   
   
   
