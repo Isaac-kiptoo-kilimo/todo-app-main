@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+:root{
+   --pry-bg:hsl(235, 21%, 11%); 
+   --pry-color:hsl(233, 14%, 35%);
+   --pry-color-light: hsl(236, 9%, 61%);
+   --pry-bg-sec:hsl(235, 24%, 19%);
+}
+
+  body {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: var(--pry-bg);
+  }
+
+  ul,li{
+    list-style: none;
+  }
+  
+  .top-header {
+    background: url("../images/bg-desktop-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+    transition: all 0.3s;
+  }
+
+  
