@@ -173,4 +173,56 @@
     color:hsl(236, 33%, 92%);
   }
  
- 
+  /* light mode start here */
+
+
+  body.light{
+    background-color: hsl(236, 33%, 92%);
+  }
+  body.light .top-header{
+    background: url("images/bg-desktop-light.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+  }
+  body.light .dragdrop{
+    color: var(--pry-color-light);
+  }
+  body.light .todo-input input{
+    color: hsl(235, 19%, 35%);
+    background-color: hsl(0, 0%, 98%);
+  }
+  body.light .todo-input button{
+    border: 1px solid hsl(233, 11%, 84%);
+  }
+  body.light .todos ul li{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 19%, 35%);
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+  }
+  body.light .todos input{
+    border: 1px solid hsl(233, 11%, 84%);
+  }
+  body.light .todos input:checked ~ .text{
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%);
+  }
+  body.light .footer{
+    background-color: hsl(0, 0%, 98%);
+    color: var(--pry-color-light);
+  }
+  body.light .filters label:hover{
+    color:hsl(235, 19%, 35%);
+  }
+  body.light .clear:hover{
+    color:hsl(235, 19%, 35%);
+  }
+  .left{
+    display: none;
+  }
+
+  
+  
+  
+  
+  
