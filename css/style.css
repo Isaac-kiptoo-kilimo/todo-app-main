@@ -145,7 +145,8 @@
     color:hsl(234, 11%, 52%);
   }
   .remove{
-    background: url('/images/images/icon-cross.svg') no-repeat;
+    background: url('/images/images/icon-cross.svg') ;
+    background-repeat: no-repeat;
     width: 15px;
     height: 15px;
     cursor: pointer;
@@ -180,7 +181,8 @@
     background-color: hsl(236, 33%, 92%);
   }
   body.light .top-header{
-    background: url("images/bg-desktop-light.jpg") no-repeat;
+    background: url("images/bg-desktop-light.jpg") ;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 40vh;
@@ -227,7 +229,8 @@
       display: none;
     }
     .top-header{
-      background: url("images/bg-mobile-dark.jpg") no-repeat;
+      background: url("images/bg-mobile-dark.jpg") ;
+      background-repeat: no-repeat;
       background-size: cover;
       height: 35vh;
     }
@@ -267,7 +270,8 @@
       color: var(--pry-color-light);
     }
     body.light .top-header{
-      background: url("images/bg-mobile-light.jpg") no-repeat;
+      background: url("images/bg-mobile-light.jpg");
+      background-repeat:  no-repeat;
       background-size: cover;
     }
     body.light .left-clear:hover{

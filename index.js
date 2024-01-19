@@ -44,8 +44,8 @@ addButton.addEventListener('click', () => {
     }
 });
 
-itemInput.addEventListener('keypress', (event) => {
-    if (event.charCode === 13) {
+itemInput.addEventListener('keypress', (e) => {
+    if (e.charCode === 13) {
         addButton.click();
     }
 });
@@ -99,7 +99,6 @@ todoList.addEventListener('click', (e) => {
         if (index !== -1) {
             todos[index].completed = !todos[index].completed;
 
-            // Update local storage
             localStorage.setItem('todos', JSON.stringify(todos));
         }
 
@@ -141,7 +140,7 @@ function filterTodo(id) {
 
 /* Clear items */
 const clear = document.querySelector('.clear');
-const mobClear = document.querySelector('.left-clear');
+const leftClear = document.querySelector('.left-clear');
 
 clear.addEventListener('click', () => {
     const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
@@ -150,7 +149,7 @@ clear.addEventListener('click', () => {
     });
 });
 
-mobClear.addEventListener('click', () => {
+leftClear.addEventListener('click', () => {
     const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
     itemChecked.forEach(item => {
         removeItems(item.closest('li'));
