@@ -145,7 +145,7 @@
     color:hsl(234, 11%, 52%);
   }
   .remove{
-    background: url('images/icon-cross.svg') no-repeat;
+    background: url('/images/images/icon-cross.svg') no-repeat;
     width: 15px;
     height: 15px;
     cursor: pointer;
